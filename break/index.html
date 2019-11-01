@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Labs Break</title>
+</head>
+<body>
+    <h3 id="result"></h3>
+    <button type="button" onclick="plus()">Plus [+2]</button>
+    <button type="button" onclick="subtract()">Subtract [-3]</button>
+
+    <script>
+        let result=0;
+        document.getElementById("result").innerText=result;
+        function plus(){ 
+            result +=2;
+            document.getElementById("result").innerText =result;
+        }
+
+        function subtract(){
+            result -=3;
+            document.getElementById("result").innerText = result;
+        }
+    </script>
+</body>
+</html>
